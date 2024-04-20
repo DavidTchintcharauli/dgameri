@@ -18,7 +18,6 @@ const Header = () => {
           <li>
             <Link to="/portfolio" className="hover:text-gray-400">Portfolio</Link>
           </li>
-          {/* Add more navigation links as needed */}
         </ul>
       </nav>
     </header>

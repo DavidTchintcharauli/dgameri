@@ -1,15 +1,26 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
 
-function App() {
-
-
+const App = () => {
   return (
-    <div>
-      <div className='bg-green-200'>
-        sdsadsa
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-grow">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/portfolio" component={Portfolio} />
+          </Switch>
+        </main>
+        <Footer />
       </div>
-      <p className='text-orange-700'>some text</p>
-    </div>
-  )
-}
+    </Router>
+  );
+};
 
-export default App
+export default App;
