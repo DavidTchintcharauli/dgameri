@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.svg';
 
 const Header = () => {
@@ -18,12 +18,6 @@ const Header = () => {
                     <Link to="/about" className="mx-3 hover:text-blue-500 transition-colors duration-300">About Us</Link>
                     <Link to="/services" className="mx-3 hover:text-blue-500 transition-colors duration-300">Services</Link>
                     <Link to="/contact" className="mx-3 hover:text-blue-500 transition-colors duration-300">Contact</Link>
-                    <Link to="/FurnitureDetails">
-                        <button className="text-red-800 bg-green-500">furniture detail</button>
-                    </Link>
-                    <NavLink className="ml-auto" to="/signup">
-                        <button className="text-red-800 bg-green-500">sigdasdad</button>
-                    </NavLink>
                 </nav>
 
                 {/* Catalog & Shopping Button */}
